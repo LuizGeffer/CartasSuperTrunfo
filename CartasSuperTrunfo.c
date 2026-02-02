@@ -129,22 +129,89 @@ int main()
     if (segund == first)
     {
         printf("\n\nVocê já escolheu este atributo, selecione um novo:");
-        scanf("\n %d", &segund);
         printf("\nOpção - 1 - População");
         printf("\nOpção - 2 - Área");
         printf("\nOpção - 3 - PIB");
         printf("\nOpção - 4 - Densidade");
         printf("\nOpção - 5 - PIB PER CAPITAL");
+         scanf("\n %d", &segund);
     }
 
-    switch (first && segund)
-    {
+  switch (first)
+  {
+  case 1:
+    if(Populacao>Populacao2){
+      printf("\n Carta 1 Venceu");
+    } else printf("\n Carta 2 Venceu");
+    break;
 
-    
+    case 2:
+    if(Area>Area2){
+      printf("\n Carta 1 Venceu");
+    } else printf("\n Carta 2 Venceu");
+    break;
 
-        default:
+    case 3:
+    if(PIB>PIB2){
+      printf("\n Carta 1 Venceu");
+    } else printf("\n Carta 2 Venceu");
+    break;
 
-        ;
+    case 4:
+    if(Densidade<Densidade2){
+      printf("\n Carta 1 Venceu");
+    } else printf("\n Carta 2 Venceu");
+    break;
+
+    case 5:
+    if(PIB_PER_CAPITAL>PIB_PER_CAPITAL2){
+      printf("\n Carta 1 Venceu");
+    } else printf("\n Carta 2 Venceu");
+    break;
+
+
+  
+  default:
+    break;
+  }
+
+  switch (segund)
+  {
+  case 1:
+    if(Populacao>Populacao2){
+      printf("\n Carta 1 Venceu");
+    } else printf("\n Carta 2 Venceu");
+    break;
+
+    case 2:
+    if(Area>Area2){
+      printf("\n Carta 1 Venceu");
+    } else printf("\n Carta 2 Venceu");
+    break;
+
+    case 3:
+    if(PIB>PIB2){
+      printf("\n Carta 1 Venceu");
+    } else printf("\n Carta 2 Venceu");
+    break;
+
+    case 4:
+    if(Densidade<Densidade2){
+      printf("\n Carta 1 Venceu");
+    } else printf("\n Carta 2 Venceu");
+    break;
+
+    case 5:
+    if(PIB_PER_CAPITAL>PIB_PER_CAPITAL2){
+      printf("\n Carta 1 Venceu");
+    } else printf("\n Carta 2 Venceu");
+    break;
+
+
+  
+  default:
+    break;
+  }
     
 }
 
